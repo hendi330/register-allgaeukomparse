@@ -1,0 +1,1 @@
+/usr/bin/screen -dmS "registerApp" /home/register-streetkitchen/.nvm/versions/node/v18.16.0/bin/npm run dev

@@ -1,0 +1,94 @@
+@import './base.css';
+/*
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}*/
+main{
+  border-color: black;
+  border: 1px solid;
+  display: block;
+  border-radius: 50px;
+  background-color: black;
+}
+
+
+.centerdiv{
+  /*centers div in middle, make it different to different screensizes. */
+  margin-top: 5%;
+  margin-bottom:5%;
+  position:absolute;
+  
+  
+}
+@media(min-width: 0px ){
+  .centerdiv{
+  }
+  .list{
+    margin-left: 5%;
+  }
+}
+@media(min-width: 600px ){
+  .centerdiv{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media(min-width: 1024px ){
+  .centerdiv{
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+  .list{
+    margin-left: 10%;
+  }
+}
+.active{
+  background-color: green;
+}
+.margin-start-10{
+  margin-left: 10%;
+}
+.margin-bottom-5{
+  margin-bottom: 5%;
+}
+.confirmations_class{
+}
+.jobselect_class{
+  margin-top: 5%;
+  color:black;
+}
+.customcard{
+  border-radius: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
