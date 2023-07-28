@@ -75,7 +75,8 @@ function check_url_for_hash() {
 }
 async function check_hash(hash_val) {
 
-  fetch("http://localhost:5174/hash/valid", {
+  fetch("https://api.allgaeu-komparsen.de/hash/valid", {
+  // fetch("http://localhost:5174/hash/valid", {
     method: "POST",
     body: JSON.stringify(hash_val),
     headers: {
@@ -223,7 +224,8 @@ function send_data(obj) {
 
   console.log(body);
   if (check_hash(hash.value)) {
-    fetch("http://localhost:5174/users/add", {
+    // fetch("http://localhost:5174/users/add", {
+      fetch("https://api.allgaeu-komparsen.de/users/add", {
       method: "POST",
       body: data,
       // headers: obj,
@@ -231,7 +233,8 @@ function send_data(obj) {
       .then(response => response.json())
       .then(data => {
         console.log("returned data", data);
-        fetch("http://localhost:5174/hash/delete", {
+        fetch("https://api.allgaeu-komparsen.de/hash/delete", {
+        // fetch("http://localhost:5174/hash/delete", {
           method: "POST",
           body: JSON.stringify(hash.value),
           headers: {
